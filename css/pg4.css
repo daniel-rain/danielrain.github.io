@@ -1,0 +1,138 @@
+body{
+  font-family: Arial;
+}
+
+a{
+ color: red
+}
+    
+a:hover {
+  color: black;
+}
+
+
+.text{ 
+ 	padding-top: 100px;
+  	text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+  }
+
+
+/*///////////////////////////////////////////////////////////*/
+
+#container1{
+  height: 450px;
+  background-color: #70A8FA;
+}
+
+
+.icecap {
+	transition: 2s;
+
+ 	align-items: border-bottom-color: center;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom-width: 90px; 
+	border-bottom-style: solid ;
+	border-bottom-color: white;
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+.icecap:hover {
+border-bottom-width: 10px;
+	cursor: progress;
+}
+
+
+.mountain{
+	transition: 1s ;
+	align-items: center;
+	border-bottom: 130px solid #557329;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	height: 0;
+	width: 125px;
+	margin-right:auto;
+	margin-left: auto;   
+}
+/* ///////////////////////////////////////////////////////*/
+
+
+#container2{
+	height: 450px;
+	padding-top: 100px;
+	background-color: black;
+
+}
+
+
+.shift:hover {
+	animation: melt 5s infinite;
+
+ 	
+}
+
+/*///////////////////////////////////////////////////////////*/
+#container3{
+	padding-top: 200px;
+	height: 300px;
+	background-color: #5FD1E8;
+
+}
+
+.vanish{
+	color: white;
+  	text-align: center;
+	animation: fadeout 3s infinite;
+	animation-fill-mode: backwards;
+}
+
+/*///////////////////////////////////////////////////////////*/
+
+
+#container4{
+	padding-top: 150px;
+	height: 450px;
+	background-color: white;
+}
+
+.big{
+    height:50px;
+    width:50px;
+    font-size: 30px;
+}
+.button {
+	padding-top: 50px;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(50%);
+  transform: translate(50%);
+}
+
+#type {
+  padding-top: 50px;
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*///////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////*/
+
+@keyframes melt {
+  0% {transform: scaleY(1) translateY(0) ;opacity: 1;}
+  80% {transform: scaleY(2.5) translateY(0.5em) ;opacity: 0;}
+}
+
+
+
+@keyframes fadeout {
+  20% { opacity: 1;}
+  80% { opacity : 0;}
+  100% {opacity: 0;}
+}

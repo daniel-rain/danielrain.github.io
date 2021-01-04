@@ -1,0 +1,84 @@
+body{
+  font-family: Arial;
+	background-color: white;
+	text-align: center;
+	color: black;
+}
+
+p{
+font-size: 12;
+text-align: left;
+ margin: auto;
+}
+
+mark{
+  background-color: red;
+  color: white;
+}
+
+.mailcontainer{
+  width: 500 px;
+  display: block;
+}
+
+.mailtext{
+  opacity: 0;
+  animation: fadein;
+  padding: 15px;
+  border: 5 px solid black;
+  animation-duration: 5s;
+
+}
+
+
+.mailtext.one{
+  animation-fill-mode: forwards;
+}
+
+.mailtext.two{
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.mailtext.three{
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.mailtext.four{
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.mailtext.inbox{
+  animation-duration: 3s; 
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes fadein {
+  20% { opacity: 0;}
+  80% { opacity : 1;}
+  100% {opacity: 1;}
+}
+
+.text-container{
+    padding-top: 2em; 
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 7.5%;
+}
+
+.box{
+  position: relative;
+  width: 500px;
+  margin: 20px;
+  border: 1px solid #000000;
+  margin-left: auto;
+  margin-right: auto;
+}

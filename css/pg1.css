@@ -1,0 +1,91 @@
+body{
+  font-family: Arial;
+	background-color: white;
+	text-align: center;
+	color: black;
+	padding-top: 15em; 
+}
+
+p{
+font-size: 12;
+padding-top: 1em; 
+text-align: center;
+ margin:auto;
+}
+
+.line1{
+  opacity: 0;
+  animation: fadein;
+animation-duration: 5s;
+  animation-fill-mode: forwards;
+
+}
+
+.line2{
+  opacity: 0;
+  animation: fadein;
+  animation-duration: 5s;
+  animation-delay: 2s;
+      animation-fill-mode: forwards;
+
+}
+
+.line3{
+  opacity: 0;
+  animation: fadein;
+animation-duration: 5s; 
+animation-delay: 5s;
+animation-fill-mode: forwards;
+
+}
+
+
+
+
+@keyframes fadein {
+  20% { opacity: 0;}
+  80% { opacity : 1;}
+  100% {opacity: 1;}
+}
+
+.text-container{
+    padding-top: 2em; 
+}
+
+.mail {
+  animation: bounce 1.25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-5%);}
+  10% { transform: translateY(15%);}
+  25% { transform:translateY(0%);}
+  35% { transform: translateY(12%);}
+  45% { transform:translateY(0%);}
+  50% { transform:translateY(7%);}
+  60% { transform:translateY(0%);}
+  65% { transform:translateY(3%);}
+  70% { transform:translateY(0); }
+
+}
+
+
+/* wiggle effect courtesy of https://www.w3schools.com/howto/howto_css_shake_image.asp */
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 7.5%;
+}
+
+.box{
+  width: 500px;
+  height: 200px;
+  position: relative;
+  margin: 10px;
+  float: center;
+  border: 1px solid black;
+
+}
